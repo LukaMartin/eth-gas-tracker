@@ -86,6 +86,12 @@ export default function App() {
           setGasNowValues(jsonResponse.data)
         })
   };
+  
+
+  useEffect(() => {
+    fetchGasValues()
+      fetchGasNowValues()
+  }, [])
 
 
   useEffect(() => {
